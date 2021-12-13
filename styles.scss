@@ -1,0 +1,49 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+// Fonts Variables
+$coolfont: 'Quicksand', sans-serif;
+$alternativefont1: 'Lobster', cursive;
+
+@media (max-height: 450px) {
+    body {
+        padding-top: 50px;
+    }
+}
+
+.landing {
+    background-image: url(./resources/Paisaje_Parque_Nacional_Calilegua.jpg);
+    background-size: cover;
+}
+
+.underlined {
+    text-decoration: underline orange;
+}
+
+.coolfont {
+    font-family: $coolfont;
+}
+
+.coolfont-bold {
+    font-family: $coolfont;
+    color: orange;
+}
+
+.font1 {
+    font-family: $alternativefont1;
+    color: orange;
+}
+
+.background-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60vw !important;
+}
+
+@media (max-width: 768px) {
+    .background-box {
+        width: 90vw !important;
+    }
+}
+
+@import './node_modules/bootstrap/scss/bootstrap.scss'

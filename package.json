@@ -1,0 +1,26 @@
+{
+  "name": "travel-site",
+  "version": "1.0.0",
+  "description": "A travel agency hypothetic site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbrahamMaciel/travel-site.git"
+  },
+  "keywords": [
+    "travel",
+    "site"
+  ],
+  "author": "Fernandez Abraham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbrahamMaciel/travel-site/issues"
+  },
+  "homepage": "https://github.com/AbrahamMaciel/travel-site#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
