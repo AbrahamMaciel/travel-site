@@ -1,14 +1,21 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 // Fonts Variables
 $coolfont: 'Quicksand', sans-serif;
 $alternativefont1: 'Lobster', cursive;
+$smalltextfont: 'Roboto', sans-serif;
 
-@media (max-height: 450px) {
+// Colours
+$color-emphasis: orange;
+$light-black: #1b1d1f;
+
+/* this query is for the fixed navbar that overflows normally */
+@media (max-height: 600px) {
     body {
-        padding-top: 50px;
+        padding-top: 65px;
     }
 }
 
@@ -17,32 +24,67 @@ $alternativefont1: 'Lobster', cursive;
     background-size: cover;
 }
 
+/* Im overriding the bootstrap stuff in an awful way coz i dont understand how to do it correctly*/
+.btn-landing {
+    background-color: $color-emphasis !important;
+    border-color: $light-black !important;
+    border-width: 2px !important;
+    color: $light-black !important;
+    font-family: $smalltextfont !important;
+    // text-transform: uppercase !important;
+}
+
 .underlined {
-    text-decoration: underline orange;
+    text-decoration: underline $color-emphasis;
 }
-
-.coolfont {
-    font-family: $coolfont;
-}
-
-.coolfont-bold {
-    font-family: $coolfont;
-    color: orange;
-}
-
-.font1 {
+.font-emphasis {
     font-family: $alternativefont1;
-    color: orange;
+    color: $color-emphasis;
+}
+
+.font-secondary {
+    font-family: $coolfont;
 }
 
 .background-box {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 60vw !important;
 }
 
+#contact-logo {
+    font-size: 32px;
+    align-self: center;
+    margin-right: 2px;
+}
+
+#contact-button {
+    align-content: center;
+    display: flex;
+    background-color: #25D366;
+    border-color: #25D366;
+    border-width: 3px;
+    border-radius: 6px;
+    font-family: $coolfont;
+    color: #ffff;
+    // border-style: solid
+}
+
+#contact-text {
+    align-self: center;
+}
+
+
+// Queries
+/* this query works by fixing appeareance of some stuff after the screen gets tinier */
 @media (max-width: 768px) {
     .background-box {
         width: 90vw !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .btn-landing {
+        width: 75% !important;
     }
 }
 

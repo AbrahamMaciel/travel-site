@@ -12,26 +12,28 @@
 
 <body>
     <!-- Top bar -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-3">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark py-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand font-secondary" href="#">La zapatenita</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active font-secondary" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link font-secondary" href="#">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link font-secondary" href="#">About your Guide</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                    <li class="nav-item mx-2">
+                        <button type="button" class="align-items-center text-content-center" id="contact-button">
+                            <ion-icon name="logo-whatsapp" id="contact-logo"></ion-icon><span id="contact-text">Contact Us</span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -42,19 +44,31 @@
     <div class="container-fluid d-flex justify-content-center align-items-center landing vh-100">
         <div class="container py-3 mx-2 d-grid background-box">
             <div class="text-center text-wrap">
-                <h1 style="font-size: 4.5em;" class="font1 underlined">Visitas Guiadas</h1>
+                <h1 style="font-size: 4.5em;" class="font-emphasis underlined">Visitas Guiadas</h1>
             </div>
             <div class="text-center my-3">
-                <h2 style="font-size: 2em;" class="font1">Disfrutá lo mejor de Jujuy con la mejor compañía!</h2>
+                <h2 style="font-size: 2em;" class="font-emphasis">Disfrutá lo mejor de Jujuy con la mejor compañía!</h2>
             </div>
-            <div class="d-grid gap-3 col-9 d-md-flex justify-content-md-center mx-auto">
-                <button class="btn btn-primary flex-fill" type="button">Servicios</button>
-                <button class="btn btn-primary flex-fill" type="button">Acerca de tu guia</button>
+            <div class="d-grid gap-3 col-9 text center d-md-flex justify-content-md-center mx-auto">
+                <button class="btn btn-primary btn-landing flex-fill" type="button">Servicios</button>
+                <button class="btn btn-primary btn-landing flex-fill" type="button">Acerca de tu guia</button>
             </div>
         </div>
     </div>
 
+    <!-- Contents go here -->
+    <div class="container-fluid">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut beatae vitae quos quam. Tempora, quaerat
+        consectetur mollitia, aliquam eius porro dolor, illo beatae dolores velit quas odio modi molestias.
+        Pariatur ipsa rem a officia non reprehenderit! Temporibus ad harum esse in iusto, magni odit et corrupti cum
+        accusamus quasi id nihil rem totam eaque dolor possimus ullam pariatur est.
+        Expedita dolore accusamus ipsa, a excepturi aliquam dolorem aut perspiciatis minima voluptas dicta ipsam eius
+        vel non libero quos eveniet id voluptate corporis. Ab tempora fuga in voluptatibus blanditiis hic!
+    </div>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
