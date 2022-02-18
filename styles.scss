@@ -73,12 +73,48 @@ $light-black: #1b1d1f;
     align-self: center;
 }
 
+.carousel-item {
+    background-color: black;
+    height: 40rem;
+}
+
+.carousel-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    color: white;
+    font-family: $coolfont;
+    font-size: 1.5em;
+}
+
+.carousel-header{
+    font-size: 3em;
+    color: $color-emphasis;
+}
+
+.overlay-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
 
 // Queries
 /* this query works by fixing appeareance of some stuff after the screen gets tinier */
 @media (max-width: 768px) {
     .background-box {
         width: 90vw !important;
+    }
+    #contact-button {
+        margin-top: 8px;
     }
 }
 
